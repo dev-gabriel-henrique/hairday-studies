@@ -6,7 +6,7 @@ module.exports = {
   target: "web",
   mode: "development",
 
-  entry: path.resolve(__dirname, "src", "./main.js"),
+  entry: path.resolve(__dirname, "src", "main.js"),
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
@@ -22,7 +22,7 @@ module.exports = {
 
   plugins: [
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, "./index.html"),
+      template: path.resolve(__dirname, "index.html"),
       favicon: path.resolve("src", "assets", "scissors.svg"),
     }),
     new CopyWebpackPlugin({
